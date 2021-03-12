@@ -1,0 +1,128 @@
+html, body {
+	//background:white;
+	height:100%;
+	width:100%;
+}
+body {
+	//background-color:#2b3e50;
+	background-color:#fff;
+	position:relative;
+	margin:0 auto;
+	padding:0;
+	resize:both;
+	overflow:auto;
+	text-align:center;
+	text-transform:uppercase;
+}
+.container { width:1200px; }
+#feature {
+	background-color:rgba(0,0,0,0.2);
+	//color:#ebebeb;
+	color:#000;
+	min-height:60%;
+	width:100%;
+	padding:5% 0;
+	text-align:center;
+	//position:relative;
+	//top:50%;
+	//margin-top:-153px;
+}
+	#feature div {
+		//position: absolute;
+		padding:5% 0;
+	}
+	#feature div h1, h2, h3, h4, h5, h6 {
+		line-height:2em;
+	}
+
+#top {
+//	background-color:#000;
+//	background-color:rgba(0,0,0,0.3);
+	width:100%;
+	margin:0px auto;
+	padding:0px;
+}
+#nav {
+    height:80px;
+	float:right;
+	}
+	#nav ul {
+		padding:0;
+		margin:0;
+		margin-top:15px;
+		//height:100%;
+	}
+	#nav ul li {
+		padding:0px;
+		margin:0px;
+		list-style-type:none;
+		display:inline-block;
+	}
+	#nav ul li a {
+		padding:0.8em 0.7em;
+		color:#222;
+		display:block;
+		letter-spacing:0.1em;
+	}
+	#nav ul li a:hover {
+		font-weight:bold;
+		text-decoration:none;
+		padding:0.8em 0.7em;
+		letter-spacing:0.1em;
+	}
+	#nav ul li a#hire {
+		border:1px solid #f65555;
+		color:#f65555;
+		font-weight:bold;
+		padding:0.8em 0.7em;
+		letter-spacing:0.1em;
+	}
+	#nav ul li a#hire:hover {
+		border:1px solid #f65555;
+		background-color:#f65555;
+		color:#fff;
+	}
+
+#icon {
+	background-image:url('../../images/logo-icon.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:130px;
+	width:130px;
+ 	margin:0 auto;
+}
+#icon-text {
+	background-image:url('../../images/logo-text.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:130px;
+	width:520px;
+ 	margin:0 auto;
+}
+#icon-logo {
+	background-image:url('../../images/logo-black.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	//border-bottom:1px solid #CCC;
+	height:80px;
+	width:400px;
+ 	//margin:0 auto;
+    float:left;
+}
+#icon-logo-blue {
+	background-image:url('../../images/logo-blue-shiny.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-bottom:1px solid #CCC;
+	height:130px;
+	width:520px;
+ 	margin:0 auto;
+}
+
+	
+.creed {
+	font-weight:normal;
+	font-style:italic;
+	text-transform:none;
+	letter-spacing:0.1em;
+}
