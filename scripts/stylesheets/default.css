@@ -100,3 +100,9 @@ body {
 	padding:25px 0;
 	text-align:center;
 }
+#footer {
+    color:#999;
+    font-size:0.6em;
+    margin-top:3em;
+    padding:1em;
+}
