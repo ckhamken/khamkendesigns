@@ -43,8 +43,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bss-overrides.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/./embed/animation/aos.min.css">
+    <link rel="stylesheet" href="assets/css/./embed/animation/animate.min.css">
     <link rel="stylesheet" href="assets/css/Contact-Details-icons.css">
     <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
 </head>
@@ -63,7 +63,7 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background: linear-gradient(rgba(0,0,0,0.5) 10%, rgb(255,255,255) 95%), url(&quot;assets/img/portfolio/Part_Sample_6.jpg&quot;) center / cover;opacity: 1;filter: grayscale(0%) hue-rotate(0deg) invert(0%);backdrop-filter: opacity(1) blur(0px);-webkit-backdrop-filter: opacity(1) blur(0px);transform: perspective(0px);">
+    <header data-bss-parallax-bg="true" class="masthead" style="background: linear-gradient(rgba(0,0,0,0.5) 20%, rgb(255,255,255) 100%), url(&quot;assets/img/portfolio/Part_Sample_6_vid.gif&quot;) center / cover;opacity: 1;filter: grayscale(0%) hue-rotate(0deg) invert(0%);backdrop-filter: opacity(1) blur(0px);-webkit-backdrop-filter: opacity(1) blur(0px);transform: perspective(0px);height: 550px;">
         <div class="container" style="height: auto;padding-top: 10em;padding-bottom: 5em;">
             <div data-aos="zoom-out-down" data-aos-duration="200" data-aos-once="true" class="intro-text" style="height: auto;padding: 0px;">
                 <div class="intro-lead-in" style="height: auto;"><span class="text-uppercase d-inline-block pulse animated" data-bss-disabled-mobile="true" style="color: var(--bs-light);font-size: 1.4em;text-shadow: 5px 5px 20px var(--bs-dark);line-height: 1em;font-weight: bold;max-width: 85%;">Intentional design and precision CNC machining for impactful solutions</span></div>
@@ -73,36 +73,88 @@
     </header>
     <section class="mb-5" style="padding: 0px;">
         <div class="container" style="padding: 0px;margin: 0px;margin-right: auto;margin-left: auto;">
-            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center" style="margin-top: 0px;">
-                <div class="col"><a class="text-decoration-none" href="engineering.html">
-                        <div class="card">
-                            <div class="card-body text-decoration-none p-3" style="height: 480px;"><img class="img-fluid aspect-ratio-21x9 object-fit-cover" width="766" height="431" src="assets/img/portfolio/Engineering2.jpg" style="margin-bottom: 1em;">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center" style="margin-top: -90px;">
+                <div class="col col-xl-6"><a class="text-decoration-none" href="engineering.html">
+                        <div class="card" style="box-shadow: 0px 0px 10px 0px rgba(33,37,41,0.2);">
+                            <div class="card-body text-decoration-none p-3" style="min-height: 500px;"><img class="img-fluid aspect-ratio-21x9 object-fit-cover" width="766" height="431" src="assets/img/portfolio/Engineering2.jpg" style="margin-bottom: 1em;">
                                 <h4 class="text-decoration-none card-title">Engineering Design</h4>
                                 <p class="text-decoration-none card-text">Mechanical design services supporting new development and reverse engineering efforts and backed by practical engineering experience with modern CAD tools to develop efficient, production-ready tooling, fixtures, and custom solutions with a focus on accuracy and manufacturability.</p>
+                                <p class="text-decoration-underline text-info card-text">Learn more &gt;&gt;</p>
                             </div>
                         </div>
                     </a></div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body p-3" style="height: 480px;"><img class="img-fluid aspect-ratio-21x9 object-fit-cover" width="700" height="875" src="assets/img/portfolio/5-full.jpg" style="margin-bottom: 1em;">
-                            <h4 class="card-title">Prototyping</h4>
-                            <p class="card-text">Prototyping expertise bridging design and CNC machining, transforming concepts into functional, production-ready parts. Through intentional design, modern CAD tools, and precision machining, we are able to rapidly iterate and effectively refine prototypes to ensure performance, manufacturability, and reliability from the first build.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col"><a class="text-decoration-none" href="cnc-machining.html">
-                        <div class="card">
-                            <div class="card-body p-3" style="height: 480px;"><img class="img-fluid aspect-ratio-21x9 object-fit-cover" width="1024" height="428" src="assets/img/portfolio/CNC2.jpg" style="margin-bottom: 1em;">
+                <div class="col col-xl-6"><a class="text-decoration-none" href="cnc-machining.html">
+                        <div class="card" style="box-shadow: 0px 0px 10px 0px rgba(33,37,41,0.2);">
+                            <div class="card-body p-3" style="min-height: 500px;"><img class="img-fluid aspect-ratio-21x9 object-fit-cover" width="1024" height="428" src="assets/img/portfolio/CNC2.jpg" style="margin-bottom: 1em;">
                                 <h4 class="card-title">CNC Machining</h4>
                                 <p class="card-text">Precision CNC machining focused on accuracy, consistency, and efficiency. Specializing in low-volume, high-mix work, with the flexibility to support higher-volume production — while maintaining the same high standards of quality at any scale.</p>
+                                <p class="text-decoration-underline text-info card-text">Learn more &gt;&gt;</p>
                             </div>
                         </div>
                     </a></div>
             </div>
         </div>
     </section>
+    <section data-bss-parallax-bg="true" style="padding-top: 20px;padding-bottom: 20px;background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) 100%), url(&quot;assets/img/portfolio/Part_Sample_6.jpg&quot;) center / cover no-repeat;">
+        <div class="container py-4 py-xl-5">
+            <div class="text-center text-black-50 bg-primary bg-opacity-75 border rounded border-0 p-3" style="background: rgb(254,209,54);box-shadow: 0px 0px 20px 0px rgba(248,249,250,0.5);">
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col col-md-4 col-lg-4 col-xl-4" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <h4 class="display-5 fw-bold text-white mb-0">10+</h4>
+                            <p class="text-uppercase small fw-bold text-body mb-0">Years of Engineering Design</p>
+                        </div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-xl-4" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <h4 class="display-5 fw-bold text-white mb-0">30+</h4>
+                            <p class="text-uppercase small fw-bold text-body mb-0">Years of Manufacturing Experience</p>
+                        </div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-xl-4" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <h4 class="display-5 fw-bold text-white mb-0">6+</h4>
+                            <p class="text-uppercase small fw-bold text-body mb-0">Industries Served</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 shadow-lg" style="margin: 0px;">
+                    <div class="col col-sm col-md-4 col-lg-2 col-xl-2 col-xxl shadow-lg align-self-center" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <p class="text-uppercase small fw-bold text-dark mb-0">Automation</p>
+                        </div>
+                    </div>
+                    <div class="col col-sm col-md-4 col-lg-2 col-xl-2 col-xxl shadow-lg align-self-center" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <p class="text-uppercase small fw-bold text-dark mb-0">Automotive</p>
+                        </div>
+                    </div>
+                    <div class="col col-sm col-md-4 col-lg-2 col-xl-2 col-xxl shadow-lg align-self-center" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <p class="text-uppercase small fw-bold text-dark mb-0">Medical</p>
+                        </div>
+                    </div>
+                    <div class="col col-sm col-md-4 col-lg-2 col-xl-2 col-xxl shadow-lg align-self-center" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <p class="text-uppercase small fw-bold text-dark mb-0">&nbsp;Packaging&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col col-sm col-md-4 col-lg-2 col-xl-2 col-xxl shadow-lg align-self-center" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <p class="text-uppercase small fw-bold text-dark mb-0">&nbsp;Poultry</p>
+                        </div>
+                    </div>
+                    <div class="col col-sm col-md-4 col-lg-2 col-xl-2 col-xxl shadow-lg align-self-center" data-aos="fade-up" data-aos-once="true">
+                        <div class="p-3">
+                            <p class="text-uppercase small fw-bold text-dark mb-0">Robotics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about" class="services" style="padding: 0px;">
-        <div class="container" style="border-top-width: 1px;border-top-style: dashed;padding-top: 12px;">
+        <div class="container" style="padding-top: 2em;border-top-width: 1px;padding-bottom: 1em;">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3 class="text-uppercase">Why Work With Us?</h3>
@@ -123,7 +175,7 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/./embed/animation/aos.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/agency.js"></script>
     <script src="assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
