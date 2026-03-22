@@ -1,0 +1,120 @@
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fed136;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-nav .dropdown-toggle.active::before {
+  color: #fed136;
+  transform: translateY(-50%) rotateX(180deg);
+}
+
+/* Dropdown Menu Styling */
+
+.navbar-nav .dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+  box-shadow: 0 2px 8px rgba(33, 37, 41, 0.15);
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-nav .dropdown-item {
+  color: #212529;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .dropdown-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fed136;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover::before {
+  width: 100%;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: transparent;
+  color: #212529;
+}
+
+/* Hide the default Bootstrap dropdown arrow and add custom chevron */
+
+.navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-nav .dropdown-toggle {
+  position: relative;
+  padding-right: 1.5em;
+}
+
+/* Add chevron icon */
+
+.navbar-nav .dropdown-toggle::before {
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 0.75em;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #212529;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .dropdown-toggle:hover::before {
+  color: #fed136;
+  transform: translateY(-50%) rotateX(180deg);
+}
+
+.navbar-nav .dropdown-toggle[aria-expanded="true"]::before {
+  transform: translateY(-50%) rotateX(180deg);
+}
+
+/* Show yellow bottom border on active dropdown toggle */
+
+.navbar-nav .dropdown-toggle.active {
+  border-bottom: 2px solid #fed136;
+  padding-bottom: calc(0.5rem - 2px);
+}
+

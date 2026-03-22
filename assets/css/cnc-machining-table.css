@@ -1,0 +1,71 @@
+/* Responsive CNC Capabilities Table */
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-left: 2em;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .capabilities-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.capability-column {
+  display: grid;
+  gap: 1rem;
+}
+
+.capability-item {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  background-color: #f8f9fa;
+  transition: box-shadow 0.2s ease;
+}
+
+.capability-item:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+}
+
+.capability-item-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.25rem;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.capability-item-value {
+  color: #212529;
+  line-height: 1.4;
+}
+
+@media (max-width: 576px) {
+  .capabilities-grid {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .capability-item {
+    padding: 0.875rem;
+  }
+}
+
+/* Ensure empty table cells maintain height */
+
+table td:empty {
+  min-height: 1.5rem;
+  display: table-cell;
+}
+
+table td {
+  vertical-align: middle;
+}
+
